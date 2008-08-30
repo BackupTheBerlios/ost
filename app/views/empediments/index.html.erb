@@ -1,0 +1,19 @@
+<h1>Listing empediments</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Priority</th>
+    <th>Solved</th>
+    <th>Options</th>
+  </tr>
+
+<% for empediment in @empediments %>
+  <tr>
+    <td><%=h empediment.name %></td>
+    <td><%=h empediment.priority %></td>
+    <td><%=h empediment.solved %></td>
+    <td><%= link_to 'Show', empediment %> <%= link_to 'Edit', edit_empediment_path(empediment) %> <%= link_to 'Destroy', empediment, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>

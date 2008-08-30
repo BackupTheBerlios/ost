@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>OpenScrumTool</title>
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<%= stylesheet_link_tag 'scaffold' %>
+<%= stylesheet_link_tag '535734' %>
+<%= stylesheet_link_tag 'menu_style' %>
+</head>
+<body>
+<div id="pagewidth" >
+	<div id="header" ></div>
+	<div id="menu">
+		<div id="outside">
+		<ul id="navigation-1">
+   			<li><a href="../" title="Back" target="_self"><< Back</a>
+  			</li>
+			<li><a href="" title="Teams" target="_self">Teams</a>
+				<ul class="navigation-2">
+					<li><a href="../teams/new" title="Create a new Team" target="_self">Create a new Team</a></li>
+					<li><a href="../teams" title="Administrate Teams" target="_self" >Administrate Teams</a></li>
+				</ul>
+			</li>
+			<li><a href="" title="Employees" target="_self">Employees</a>
+				<ul class="navigation-2">
+					<li><a href="../employees/new" title="Add a new employees" target="_self">Add a new employee</a></li>
+					<li><a href="../employees" title="Administrate employees" target="_self">Administrate employees</a></li>
+				</ul>
+			</li>
+			<li><a href="" title="Components" target="_self">Components</a>
+				<ul class="navigation-2">			
+					<li><a href="../components/new" title="Add new Component" target="_self">Add a new Component</a></li>
+					<li><a href="../components" title="Administrate Components" target="_self">Administrate Components</a></li>
+				</ul>
+			</li>
+			<li><a href="" title="Categories" target="_self">Categories</a>
+				<ul class="navigation-2">
+					<li><a href="../categories/new" title="Add a new Categories" target="_self">Add a new Category</a></li>
+					<li><a href="../categories" title="Administrate Categories" target="_self">Administrate Categories</a></li>
+				</ul>
+			</li>
+		</ul>
+		</div>
+	</div>
+	<div id="wrapper" class="clearfix" >
+		<div id="maincolwrap">
+		<div id="maincol" >
+			<p style="color: green"><%= flash[:notice] %></p>
+			<p>
+			<%= yield  %>
+			</p>
+		</div>
+		</div>
+	</div>
+	<div id="footer" ></div>
+</div>
+</body>
+</html>

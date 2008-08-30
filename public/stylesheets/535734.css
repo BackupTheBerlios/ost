@@ -1,0 +1,79 @@
+html, body{ 
+ margin:0; 
+ padding:0; 
+ text-align:center;
+ font-family: Verdana, Arial, Helvetica;
+ font-size: 12px;
+ background-color: #30678C; 
+} 
+ 
+#pagewidth{ 
+ width: 788px; 
+ text-align:left;  
+ margin-left:auto; 
+ margin-right:auto;
+} 
+ 
+#header{
+ position:relative; 
+ height:99px; 
+ background-image: url(../images/ost_top.png);
+ width:100%;
+} 
+ 
+#menu{
+ position:relative; 
+ height:28px; 
+ background-image: url(../images/ost_menu.png);
+ width:100%;
+ z-index: 100;
+} 
+
+#maincolwrap{
+  background-image: url(../images/ost_bg.png);
+  width: 788px
+}
+
+#maincol{
+ font-size: 12px;
+ font-family: Verdana, Arial, Helvetica;
+ text-align: left; 
+ display:inline; 
+ position: relative; 
+ width:618px;
+ margin-left: 35px;
+ margin-right: 35px;
+ padding-top: 35px;
+ padding-right: 35px;
+ padding-bottom: 35px;
+ height: 700px;
+}
+ 
+#footer{
+ height: 45px; 
+  background-image: url(../images/ost_footer.png);
+ clear:both;
+ } 
+ 
+ h1 {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Verdana, Arial, Helvetica;
+  padding-top: 35px;
+ }
+
+.clearfix:after {
+ content: "."; 
+ display: block; 
+height: 0; 
+ clear: both; 
+ visibility: hidden;
+ }
+ 
+.clearfix{display: inline-block;}
+
+/* Hides from IE-mac \*/
+* html .clearfix{height: 1%;}
+.clearfix{display: block;}
+/* End hide from IE-mac */  
+

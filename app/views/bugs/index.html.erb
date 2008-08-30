@@ -1,0 +1,27 @@
+<h1>Listing bugs</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Component</th>
+    <th>Priority</th>
+    <th>Date</th>
+    <th>Fixed</th>
+    <th>Status</th>
+    <th>Employee</th>
+    <th>Options</th>
+  </tr>
+
+<% for bug in @bugs %>
+  <tr>
+    <td><%=h bug.name %></td>
+    <td><%=h bug.component.handle rescue nil %></td>
+    <td><%=h bug.priority %></td>
+    <td><%=h bug.date %></td>
+    <td><%=h bug.fixed %></td>
+    <td><%=h bug.status %></td>
+    <td><%=h bug.employee.handle rescue nil %></td>
+    <td><%= link_to 'Show', bug %> <%= link_to 'Edit', edit_bug_path(bug) %> <%= link_to 'Destroy', bug, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>

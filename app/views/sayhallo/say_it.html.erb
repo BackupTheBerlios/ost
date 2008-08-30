@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>OpenScrumTool</title>
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<%= stylesheet_link_tag 'scaffold' %>
+<%= stylesheet_link_tag '535734' %>
+<%= stylesheet_link_tag 'menu_style' %>
+</head>
+<body>
+<div id="pagewidth" >
+	<div id="header" ></div>
+	<div id="menu">
+		<div id="outside">
+		<ul id="navigation-1">
+   			<li><a href="#" title="Home" target="_self">Home</a>
+  			</li>
+
+			<li><a href="" title="Preparation" target="_self" >Pre Sprint</a>
+				<ul class="navigation-2">
+					<li><a href="../backogs/new" title="Start a new Sprint" target="_self" >Add a new Backlog entry</a></li>
+					<li><a href="../backlogs" title="Administrate your Backlog" target="_self" >Administrate the Backlog</a></li>
+					<li><a href="../bugs/new" title="Add a new Bug" target="_self" >Add a new Bug</a></li>
+					<li><a href="../bugs" title="Administrate the Buglist" target="_self" >Administrate Buglist</a></li>
+				</ul>
+			</li>
+
+			<li><a href="" title="Sprints" target="_self" >Sprint</a>
+				<ul class="navigation-2">
+					<li><a href="../sprints/new" title="Start a new Sprint" target="_self" >Start a new Sprint</a></li>
+					<li><a href="#" title="Administrate your actual Sprint" target="_self" >Administrate actual Sprint</a></li>
+					<li><a href="../sprints" title="Administrate all available Sprints" target="_self" >Administrate all Sprints</a></li>
+					<li><a href="../tasks/new" title="Add a new Task" target="_self" >Add a new Task</a></li>
+					<li><a href="../tasks" title="Administrate all available Tasks" target="_self" >Administrate all Tasks</a></li>
+					<li><a href="../subtasks/new" title="Add new Subtask" target="_self" >Add a new Subtask</a></li>
+					<li><a href="../subtasks" title="Administrate all available Subtasks" target="_self" >Administrate all Subtasks</a></li>
+					<li><a href="../steps/new" title="Add a new Step" target="_self" >Add a new Step</a></li>
+					<li><a href="../steps" title="Administrate all available Steps" target="_self" >Administrate all Steps</a></li>
+					<li><a href="../empediments/new" title="Add a new Empediment" target="_self" >Add a new Empediment</a></li>
+					<li><a href="../empediments" title="Administrate the Empediment List" target="_self" >Administrate Empediment List</a></li>
+				</ul>
+			</li>
+
+			<li><a href="" title="Administration" target="_self" >Administration</a>
+				<ul class="navigation-2">
+					<li><a href="../teams/new" title="Add a new Team" target="_self" >Add a new Team</a></li>
+					<li><a href="../teams" title="Administrate all available Teams" target="_self" >Administrate all Teams</a></li>
+					<li><a href="../employees/new" title="Add a new Employee" target="_self" >Add a new Employee</a></li>
+					<li><a href="../employees" title="Administrate all Employees" target="_self" >Administrate all Employees</a></li>
+					<li><a href="../categories/new" title="Add new Category" target="_self" >Add a new Category</a></li>
+					<li><a href="../categories" title="Administrate all Categories" target="_self" >Administrate all Categories</a></li>
+					<li><a href="../components/new" title="Add a new Component" target="_self" >Add a new Component</a></li>
+					<li><a href="../components" title="Administrate all Components" target="_self" >Administrate all Components</a></li>
+				</ul>
+			</li>
+		</ul>
+		</div>
+	</div>
+	<div id="wrapper" class="clearfix" >
+		<div id="maincolwrap">
+		<div id="maincol" >
+			<p style="color: green"><%= flash[:notice] %></p>
+			<h1>Welcome to the OpenScrumTool</h1>
+			<p>
+				Please select the option you want to start with.<br/>
+				If this is the first time you use the OpenScrumTool, it is suggested that you first add Teams, Employees etc. in the order in which you can find them inside the <i>"Administration"</i> menu.<br/>
+				After you have added everything you think that you may require, you can start over with doing the PreSprint Tasks like adding your planned features to the Backlog, adding bugs into your buglist etc. .<br/>
+				Then you can go on to adding the first Sprint and its Tasks by using your Buglist or Backlogitems. You should also split every Task into Subtasks, so you are able to assign them to your employees. This will make life a bit easier than one big project without for example milestones.<br/>
+				<br/>
+				After that you can start your Sprint by adding Steps for every employee and subtask each day.<br/>
+<br/>
+If there pop up problems or something else which withholds your developers from working, you can add an entry to the empediment list, which you have to check frequently to see if you are able to eliminate some of them (not the developsers ;) ).
+			</p>
+		</div>
+		</div>
+	</div>
+	<div id="footer" ></div>
+</div>
+</body>
+</html>

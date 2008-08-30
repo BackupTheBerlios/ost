@@ -1,0 +1,38 @@
+<p>
+  <b>Name:</b>
+  <%=h @sprint.name %>
+</p>
+
+<p>
+  <b>Startdate:</b>
+  <%=h @sprint.startdate %>
+</p>
+
+<p>
+  <b>Enddate:</b>
+  <%=h @sprint.enddate %>
+</p>
+
+<p>
+  <b>Actualsprint:</b>
+  <%=h @sprint.actualsprint %>
+</p>
+
+<p>
+  <b>Holydays:</b>
+  <%=h @sprint.holydays %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @sprint.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_sprint_path(@sprint) %> |
+<%= link_to 'Back', sprints_path %>
+
+<br/>
+
+<img src="<%= url_for :controller=>'reports', :action=>'burndowngraph' %>" width="640px" height="480px">
+<img src="<%= url_for :controller=>'reports', :action=>'demogruff' %>" width="640" height="480">

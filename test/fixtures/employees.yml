@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  firstname: MyString
+  lastname: MyString
+  handle: MyString
+  workinghours: 1.5
+  vacationdays: 1.5
+  team_id: 1
+
+two:
+  firstname: MyString
+  lastname: MyString
+  handle: MyString
+  workinghours: 1.5
+  vacationdays: 1.5
+  team_id: 1

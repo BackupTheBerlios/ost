@@ -1,0 +1,43 @@
+<p>
+  <b>Name:</b>
+  <%=h @bug.name %>
+</p>
+
+<p>
+  <b>Component:</b>
+  <%=h @bug.component.name rescue nil %>
+</p>
+
+<p>
+  <b>Priority:</b>
+  <%=h @bug.priority %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%=h @bug.date %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%=h @bug.status %>
+</p>
+
+<p>
+  <b>Employee:</b>
+  <%=h @bug.employee.handle rescue nil %> - <%=h @bug.employee.firstname rescue nil %> <%=h @bug.employee.lastname rescue nil%>
+</p>
+
+<p>
+  <b>Fixed:</b>
+  <%=h @bug.fixed %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @bug.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_bug_path(@bug) %> |
+<%= link_to 'Back', bugs_path %>

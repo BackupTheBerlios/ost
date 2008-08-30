@@ -1,0 +1,43 @@
+<p>
+  <b>Name:</b>
+  <%=h @subtask.name %>
+</p>
+
+<p>
+  <b>Priority:</b>
+  <%=h @subtask.priority %>
+</p>
+
+<p>
+  <b>Hourguess:</b>
+  <%=h @subtask.hourguess %>
+</p>
+
+<p>
+  <b>Riskguess:</b>
+  <%=h @subtask.riskguess %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @subtask.description %>
+</p>
+
+<p>
+  <b>Task:</b>
+  <%=h @subtask.task.name rescue nil %>
+</p>
+
+<p>
+  <b>Employee:</b>
+  <%=h @subtask.employee.handle rescue nil%> - <%=h @subtask.employee.firstname rescue nil%> <%=h @subtask.employee.lastname rescue nil%>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%=h @subtask.category.handle rescue nil%> - <%=h @subtask.category.name rescue nil%>
+</p>
+
+
+<%= link_to 'Edit', edit_subtask_path(@subtask) %> |
+<%= link_to 'Back', subtasks_path %>

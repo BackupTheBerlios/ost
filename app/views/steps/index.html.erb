@@ -1,0 +1,23 @@
+<h1>Listing steps</h1>
+
+<table>
+  <tr>
+    <th>Subtask</th>
+    <th>Date</th>
+    <th>Hours</th>
+    <th>Percentage</th>
+    <th>Employee</th>
+    <th>Options</th>
+  </tr>
+
+<% for step in @steps %>
+  <tr>
+    <td><%=h step.subtask.name rescue nil%></td>
+    <td><%=h step.date %></td>
+    <td><%=h step.hours %></td>
+    <td><%=h step.percentage %></td>
+    <td><%=h step.employee.handle rescue nil %></td>
+    <td><%= link_to 'Show', step %> <%= link_to 'Edit', edit_step_path(step) %> <%= link_to 'Destroy', step, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>

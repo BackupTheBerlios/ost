@@ -1,0 +1,21 @@
+<p>
+<h1>Listing teams</h1>
+</p>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Handle</th>
+    <th>Color</th>
+    <th>Options</th>
+  </tr>
+
+<% for team in @teams %>
+  <tr>
+    <td><%=h team.name %></td>
+    <td><%=h team.handle %></td>
+    <td><%=h team.color %></td>
+    <td><%= link_to 'Show', team %> <%= link_to 'Edit', edit_team_path(team) %> <%= link_to 'Destroy', team, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>

@@ -1,0 +1,28 @@
+<p>
+  <b>Subtask:</b>
+  <%=h @step.subtask.name rescue nil %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%=h @step.date %>
+</p>
+
+<p>
+  <b>Hours:</b>
+  <%=h @step.hours %>
+</p>
+
+<p>
+  <b>Percentage:</b>
+  <%=h @step.percentage %>
+</p>
+
+<p>
+  <b>Employee:</b>
+  <%=h @step.employee.handle rescue nil %> - <%=h @step.employee.firstname rescue nil %> <%=h @step.employee.lastname rescue nil %>
+</p>
+
+
+<%= link_to 'Edit', edit_step_path(@step) %> |
+<%= link_to 'Back', steps_path %>

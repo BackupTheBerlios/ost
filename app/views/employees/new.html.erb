@@ -1,0 +1,35 @@
+<h1>New employee</h1>
+
+<% form_for(@employee) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :firstname %><br />
+    <%= f.text_field :firstname %>
+  </p>
+  <p>
+    <%= f.label :lastname %><br />
+    <%= f.text_field :lastname %>
+  </p>
+  <p>
+    <%= f.label :handle %><br />
+    <%= f.text_field :handle %>
+  </p>
+  <p>
+    <%= f.label :workinghours %><br />
+    <%= f.text_field :workinghours %>
+  </p>
+  <p>
+    <%= f.label :vacationdays %><br />
+    <%= f.text_field :vacationdays %>
+  </p>
+  <p>
+    <%= f.label :team_id %><br />
+    <%= collection_select(:employee, :team_id, Team.find(:all), :id, :name, {:prompt => true})%>
+  </p>
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', employees_path %>

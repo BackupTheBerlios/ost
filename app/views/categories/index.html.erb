@@ -1,0 +1,19 @@
+<h1>Listing categories</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Handle</th>
+    <th>Color</th>
+    <th>Options</th>
+  </tr>
+
+<% for category in @categories %>
+  <tr>
+    <td><%=h category.name %></td>
+    <td><%=h category.handle %></td>
+    <td><%=h category.color %></td>
+    <td><%= link_to 'Show', category %> <%= link_to 'Edit', edit_category_path(category) %> <%= link_to 'Destroy', category, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>

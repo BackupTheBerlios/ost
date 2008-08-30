@@ -1,0 +1,27 @@
+<h1>Listing employees</h1>
+
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Handle</th>
+    <th>Workinghours</th>
+    <th>Vacationdays</th>
+    <th>Team</th>
+    <th>Options</th>
+  </tr>
+
+<% for employee in @employees %>
+  <tr>
+    <td><%=h employee.firstname %></td>
+    <td><%=h employee.lastname %></td>
+    <td><%=h employee.handle %></td>
+    <td><%=h employee.workinghours %></td>
+    <td><%=h employee.vacationdays %></td>
+    <td><%=h employee.team.handle rescue nil %></td>
+    <td><%= link_to 'Show', employee %> <%= link_to 'Edit', edit_employee_path(employee) %> <%= link_to 'Destroy', employee, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= complex_bar_graph [['Employee1', 34], ['Employee2', 53]]%>

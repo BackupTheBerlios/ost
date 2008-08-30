@@ -1,0 +1,17 @@
+<h1>Listing tasks</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Priority</th>
+    <th>Options</th>
+  </tr>
+
+<% for task in @tasks %>
+  <tr>
+    <td><%=h task.name %></td>
+    <td><%=h task.priority %></td>
+    <td><%= link_to 'Show', task %> <%= link_to 'Edit', edit_task_path(task) %> <%= link_to 'Destroy', task, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>

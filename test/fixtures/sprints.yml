@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  startdate: 2008-08-27
+  enddate: 2008-08-27
+  description: MyText
+  actualsprint: false
+  holydays: 1.5
+
+two:
+  name: MyString
+  startdate: 2008-08-27
+  enddate: 2008-08-27
+  description: MyText
+  actualsprint: false
+  holydays: 1.5

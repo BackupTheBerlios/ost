@@ -1,0 +1,22 @@
+<p>
+  <b>Name:</b>
+  <%=h @component.name %>
+</p>
+
+<p>
+  <b>Handle:</b>
+  <%=h @component.handle %>
+</p>
+
+<p>
+  <b>Employee:</b>
+  <%=h @component.employee.handle rescue nil %> - <%=h @component.employee.firstname rescue nil %> <%=h @component.employee.lastname rescue nil %> 
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @component.description %>
+</p>
+
+<%= link_to 'Edit', edit_component_path(@component) %> |
+<%= link_to 'Back', components_path %>

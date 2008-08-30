@@ -1,0 +1,44 @@
+<h1>Editing bug</h1>
+
+<% form_for(@bug) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :component_id %><br />
+    <%= collection_select(:bug, :component_id, Component.find(:all), :id, :name, {:prompt => true}) %>
+  </p>
+  <p>
+    <%= f.label :priority %><br />
+    <%= f.text_field :priority %>
+  </p>
+  <p>
+    <%= f.label :date %><br />
+    <%= f.date_select :date %>
+  </p>
+  <p>
+    <%= f.label :status %><br />
+    <%= f.text_field :status %>
+  </p>
+  <p>
+    <%= f.label :employee_id %><br />
+    <%= collection_select(:bug, :employee_id, Employee.find(:all), :id, :handle, {:prompt => true}) %>
+  </p>
+  <p>
+    <%= f.label :fixed %><br />
+    <%= f.check_box :fixed %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @bug %> |
+<%= link_to 'Back', bugs_path %>

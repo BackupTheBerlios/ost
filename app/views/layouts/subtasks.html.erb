@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>OpenScrumTool</title>
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<%= stylesheet_link_tag 'scaffold' %>
+<%= stylesheet_link_tag '535734' %>
+<%= stylesheet_link_tag 'menu_style' %>
+</head>
+<body>
+<div id="pagewidth" >
+	<div id="header" ></div>
+	<div id="menu">
+		<div id="outside">
+		<ul id="navigation-1">
+   			<li><a href="../" title="Back" target="_self"><< Back</a>
+  			</li>
+			<li><a href="" title="Sprints" target="_self" >Sprints</a>
+				<ul class="navigation-2">
+					<li><a href="../sprints/new" title="Start a new Sprint" target="_self" >Start a new Sprint</a></li>
+					<li><a href="#" title="Administrate your actual Sprint" target="_self" >Administrate actual Sprint</a></li>
+					<li><a href="../sprints" title="Administrate all available Sprints" target="_self" >Administrate all Sprints</a></li>
+				</ul>
+			</li>
+			<li><a href="" title="Tasks" target="_self">Tasks</a>
+				<ul class="navigation-2">
+					<li><a href="../tasks/new" title="Add new Task" target="_self" >Add new Task</a></li>
+					<li><a href="../tasks" title="Administrate Tasks of your actual Sprint" target="_self" >Administrate Tasks</a></li>
+				</ul>			
+			</li>
+			<li><a href="" title="Subtasks" target="_self">Subtasks</a>
+				<ul class="navigation-2">
+					<li><a href="../subtasks/new" title="Add a new Subtask" target="_self" >Add a new Subtask</a></li>
+					<li><a href="../subtasks" title="Administrate Subtasks" target="_self" >Administrate Subtasks</a></li>
+				</ul>
+			</li>
+			<li><a href="" title="Steps" target="_self">Steps</a>
+				<ul class="navigation-2">
+					<li><a href="../steps/new" title="Add a Step" target="_self" >Add a Step</a></li>
+					<li><a href="../steps" title="Administrate Steps" target="_self" >Administrate Steps</a></li>
+				</ul>
+			</li>
+		</ul>
+		</div>
+	</div>
+	<div id="wrapper" class="clearfix" >
+		<div id="maincolwrap">
+		<div id="maincol" >
+			<p style="color: green"><%= flash[:notice] %></p>
+			<%= yield  %>
+		</div>
+		</div>
+	</div>
+	<div id="footer" ></div>
+</div>
+</body>
+</html>

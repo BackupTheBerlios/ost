@@ -1,0 +1,18 @@
+<p>
+  <b>Name:</b>
+  <%=h @category.name %>
+</p>
+
+<p>
+  <b>Handle:</b>
+  <%=h @category.handle %>
+</p>
+
+<p>
+  <b>Color:</b>
+  <%=h @category.color %>
+</p>
+
+
+<%= link_to 'Edit', edit_category_path(@category) %> |
+<%= link_to 'Back', categories_path %>

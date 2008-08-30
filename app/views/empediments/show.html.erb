@@ -1,0 +1,33 @@
+<p>
+  <b>Name:</b>
+  <%=h @empediment.name %>
+</p>
+
+<p>
+  <b>Priority:</b>
+  <%=h @empediment.priority %>
+</p>
+
+<p>
+  <b>Solved:</b>
+  <%=h @empediment.solved %>
+</p>
+
+<p>
+  <b>Sprint:</b>
+  <%=h @empediment.sprint.name rescue nil %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @empediment.description %>
+</p>
+
+<p>
+  <b>Ideas:</b>
+  <%=h @empediment.ideas %>
+</p>
+
+
+<%= link_to 'Edit', edit_empediment_path(@empediment) %> |
+<%= link_to 'Back', empediments_path %>

@@ -1,0 +1,30 @@
+<h1>New step</h1>
+
+<% form_for(@step) do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :subtask_id %><br />
+    <%= collection_select(:step, :subtask_id, Subtask.find(:all), :id, :name, {:prompt => true}) %>
+  </p>
+  <p>
+    <%= f.label :date %><br />
+    <%= f.date_select :date %>
+  </p>
+  <p>
+    <%= f.label :hours %><br />
+    <%= f.text_field :hours %>
+  </p>
+  <p>
+    <%= f.label :percentage %><br />
+    <%= f.text_field :percentage %>
+  </p>
+  <p>
+    <%= f.label :employee_id %><br />
+    <%= collection_select(:step, :employee_id, Employee.find(:all), :id, :handle, {:prompt => true}) %>
+  </p>
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', steps_path %>

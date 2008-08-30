@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>OpenScrumTool - Bugs: <%= controller.action_name %></title>
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<%= stylesheet_link_tag 'scaffold' %>
+<%= stylesheet_link_tag '535734' %>
+<%= stylesheet_link_tag 'menu_style' %>
+</head>
+<body>
+<div id="pagewidth" >
+	<div id="header" ></div>
+	<div id="menu">
+		<div id="outside">
+		<ul id="navigation-1">
+   			<li><a href="../" title="Back" target="_self" ><< Back</a>
+  			</li>
+			<li><a href="" title="Bugs" target="_self" >Bugs</a>
+				<ul class="navigation-2">
+					<li><a href="../bugs/new" title="Add a new Bug to the Bugtracker" target="_self" >Add new Bug</a></li>
+					<li><a href="../bugs" title="Administrate Buglist" target="_self" >Administrate Buglist</a></li>
+				</ul>
+			</li>
+		</ul>
+		</div>
+	</div>
+	<div id="wrapper" class="clearfix" >
+		<div id="maincolwrap">
+		<div id="maincol" >
+			<p style="color: green"><%= flash[:notice] %></p>
+			<%= yield  %>
+		</div>
+		</div>
+	</div>
+	<div id="footer" ></div>
+</div>
+</body>
+</html>

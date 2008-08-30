@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  priority: 1
+  description: MyText
+  ideas: MyText
+  solved: false
+  sprint_id: 1
+
+two:
+  name: MyString
+  priority: 1
+  description: MyText
+  ideas: MyText
+  solved: false
+  sprint_id: 1

@@ -1,0 +1,44 @@
+<h1>Editing subtask</h1>
+
+<% form_for(@subtask) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :task_id %><br />
+    <%= collection_select(:subtask, :task_id, Task.find(:all), :id, :name, {:prompt => true}) %>
+  </p>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :priority %><br />
+    <%= f.text_field :priority %>
+  </p>
+  <p>
+    <%= f.label :employee_id %><br />
+    <%= collection_select(:subtask, :employee_id, Employee.find(:all), :id, :handle, {:prompt => true}) %>
+  </p>
+  <p>
+    <%= f.label :hourguess %><br />
+    <%= f.text_field :hourguess %>
+  </p>
+  <p>
+    <%= f.label :riskguess %><br />
+    <%= f.text_field :riskguess %>
+  </p>
+  <p>
+    <%= f.label :category_id %><br />
+    <%= collection_select(:subtask, :category_id, Category.find(:all), :id, :name, {:prompt => true}) %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @subtask %> |
+<%= link_to 'Back', subtasks_path %>

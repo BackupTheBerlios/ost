@@ -1,0 +1,23 @@
+<h1>Listing sprints</h1>
+
+<table>
+  <tr>
+    <th>Actualsprint</th>
+    <th>Name</th>
+    <th>Startdate</th>
+    <th>Enddate</th>
+    <th>Holydays</th>
+    <th>Options</th>
+  </tr>
+
+<% for sprint in @sprints %>
+  <tr>
+    <td><%=h sprint.actualsprint %></td>
+    <td><%=h sprint.name %></td>
+    <td><%=h sprint.startdate %></td>
+    <td><%=h sprint.enddate %></td>
+    <td><%=h sprint.holydays %></td>
+    <td><%= link_to 'Show', sprint %> <%= link_to 'Edit', edit_sprint_path(sprint) %> <%= link_to 'Destroy', sprint, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>

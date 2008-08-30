@@ -1,0 +1,35 @@
+<h1>New sprint</h1>
+
+<% form_for(@sprint) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :startdate %><br />
+    <%= f.date_select :startdate %>
+  </p>
+  <p>
+    <%= f.label :enddate %><br />
+    <%= f.date_select :enddate %>
+  </p>
+  <p>
+    <%= f.label :actualsprint %><br />
+    <%= f.check_box :actualsprint %>
+  </p>
+  <p>
+    <%= f.label :holydays %><br />
+    <%= f.text_field :holydays %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </p>
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', sprints_path %>

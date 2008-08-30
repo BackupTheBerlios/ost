@@ -1,0 +1,28 @@
+<p>
+  <b>Name:</b>
+  <%=h @backlog.name %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%=h @backlog.date %>
+</p>
+
+<p>
+  <b>Priority:</b>
+  <%=h @backlog.priority %>
+</p>
+
+<p>
+  <b>Done:</b>
+  <%=h @backlog.done %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @backlog.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_backlog_path(@backlog) %> |
+<%= link_to 'Back', backlogs_path %>

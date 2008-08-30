@@ -1,0 +1,27 @@
+<h1>Listing subtasks</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Priority</th>
+    <th>Hourguess</th>
+    <th>Riskguess</th>
+    <th>Task</th>
+    <th>Employee</th>
+    <th>Category</th>
+    <th>Options</th>
+  </tr>
+
+<% for subtask in @subtasks %>
+  <tr>
+    <td><%=h subtask.name %></td>
+    <td><%=h subtask.priority %></td>
+    <td><%=h subtask.hourguess %></td>
+    <td><%=h subtask.riskguess %></td>
+    <td><%=h subtask.task.name rescue nil %></td>
+    <td><%=h subtask.employee.handle rescue nil %></td>
+    <td><%=h subtask.category.handle rescue nil %></td>
+    <td><%= link_to 'Show', subtask %> <%= link_to 'Edit', edit_subtask_path(subtask) %> <%= link_to 'Destroy', subtask, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>

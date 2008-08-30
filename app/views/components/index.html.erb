@@ -1,0 +1,19 @@
+<h1>Listing components</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Handle</th>
+    <th>Employee</th>
+    <th>Options</th>
+  </tr>
+
+<% for component in @components %>
+  <tr>
+    <td><%=h component.name %></td>
+    <td><%=h component.handle %></td>
+    <td><%=h component.employee.handle rescue nil %></td>
+    <td><%= link_to 'Show', component %> <%= link_to 'Edit', edit_component_path(component) %> <%= link_to 'Destroy', component, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>

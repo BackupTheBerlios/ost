@@ -1,0 +1,28 @@
+<h1>Editing component</h1>
+
+<% form_for(@component) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :handle %><br />
+    <%= f.text_field :handle %>
+  </p>
+  <p>
+    <%= f.label :employee_id %><br />
+    <%= collection_select(:component, :employee_id, Employee.find(:all), :id, :handle, {:prompt => true})%>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @component %> |
+<%= link_to 'Back', components_path %>

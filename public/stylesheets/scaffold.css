@@ -1,0 +1,97 @@
+p, ol, ul{
+  margin-left: 35px;
+  margin-right: 35px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size:   10px;
+  line-height: 15px;
+  text-align: left;
+}
+
+table
+{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+	margin: 45px;
+	width: 480px;
+	text-align: left;
+	border-collapse: collapse;
+}
+
+th
+{
+	font-size: 13px;
+	font-weight: bold;
+	padding: 8px;
+	background: #b9c9fe;
+	border-top: 4px solid #aabcfe;
+	border-bottom: 1px solid #fff;
+	color: #039;
+}
+td
+{
+	padding: 8px;
+	background: #e8edff; 
+	border-bottom: 1px solid #fff;
+	color: #669;
+	border-top: 1px solid transparent;
+}
+tr:hover td
+{
+	background: #d0dafd;
+	color: #339;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 12px;
+}
+
+a {
+	color: #000;
+}
+
+a:visited { 
+	color: #666; 
+}
+
+a:hover { 
+	color: #fff; 
+}
+
+.fieldWithErrors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#errorExplanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#errorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#errorExplanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+

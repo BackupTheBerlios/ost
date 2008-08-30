@@ -1,0 +1,19 @@
+<h1>Listing backlogs</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Priority</th>
+    <th>Done</th>
+    <th>Options</th>
+  </tr>
+
+<% for backlog in @backlogs %>
+  <tr>
+    <td><%=h backlog.name %></td>
+    <td><%=h backlog.priority %></td>
+    <td><%=h backlog.done %></td>
+    <td><%= link_to 'Show', backlog %> <%= link_to 'Edit', edit_backlog_path(backlog) %> <%= link_to 'Destroy', backlog, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>

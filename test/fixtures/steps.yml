@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  date: 2008-08-27
+  hours: 1.5
+  percentage: 1.5
+  employee_id: 1
+
+two:
+  date: 2008-08-27
+  hours: 1.5
+  percentage: 1.5
+  employee_id: 1
