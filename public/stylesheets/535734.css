@@ -60,6 +60,7 @@ html, body{
   font-weight: bold;
   font-family: Verdana, Arial, Helvetica;
   padding-top: 35px;
+  padding-left: 35px;
  }
 
 .clearfix:after {

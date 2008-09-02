@@ -6,7 +6,7 @@ class CreateSprints < ActiveRecord::Migration
       t.date :enddate
       t.text :description
       t.boolean :actualsprint
-      t.float :holydays
+      t.float :holidays
 
       t.timestamps
     end

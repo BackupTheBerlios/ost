@@ -6,7 +6,7 @@
     <th>Name</th>
     <th>Startdate</th>
     <th>Enddate</th>
-    <th>Holydays</th>
+    <th>Holidays</th>
     <th>Options</th>
   </tr>
 
@@ -16,7 +16,7 @@
     <td><%=h sprint.name %></td>
     <td><%=h sprint.startdate %></td>
     <td><%=h sprint.enddate %></td>
-    <td><%=h sprint.holydays %></td>
+    <td><%=h sprint.holidays %></td>
     <td><%= link_to 'Show', sprint %> <%= link_to 'Edit', edit_sprint_path(sprint) %> <%= link_to 'Destroy', sprint, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
